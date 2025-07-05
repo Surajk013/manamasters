@@ -3,13 +3,11 @@ import Navbar from './components/Navbar'
 import './App.css'
 import Hero from './pages/Home'
 import About from './pages/About'
-
-// Placeholder components
-const Courses = () => <div className="p-8">Courses</div>
-const Testimonials = () => <div className="p-8">Testimonials</div>
-const Contact = () => <div className="p-8">Contact Us</div>
-const SignIn = () => <div className="p-8">Sign-in</div>
-const Register = () => <div className="p-8">Register</div>
+import Courses from './pages/Courses'
+import Testimonials from './pages/Testimonials'
+import Contact from './pages/Contact'
+import SignIn from './pages/SignIn'
+import Register from './pages/Register'
 
 function App() {
   return (

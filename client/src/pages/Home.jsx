@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AboutTeamCard from '../components/AboutTeamCard';
+import AIChat from '../components/AIChat';
 
 
 const words = ['fun!', 'engaging!', 'interesting!', 'rewarding!', 'easy!'];
@@ -93,7 +94,7 @@ const Hero = () => {
       </section>
       <div className="relative z-10 max-w-xl mx-auto -mt-10">
         <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
-          <h2 className="text-3xl font-bold mb-2 text-gray-900">About fakademy</h2>
+          <h2 className="text-3xl font-bold mb-2 text-gray-900">About manamasters</h2>
           <p className="text-pink-600 font-semibold mb-4">Making learning fun, rewarding, and accessible for everyone.</p>
           <ul className="mb-6 text-gray-700 text-left max-w-md mx-auto space-y-2">
             <li>🎮 Gamified courses and challenges</li>
@@ -109,7 +110,7 @@ const Hero = () => {
           <div className="bg-white rounded-2xl shadow-2xl flex flex-col md:flex-row overflow-hidden min-h-[420px]">
             <div className="flex-1 py-12 px-8 border-b md:border-b-0 md:border-r border-gray-200 flex flex-col justify-center">
               <h3 className="text-2xl font-bold mb-4 text-blue-700 flex items-center"><span className="mr-2">🎯</span> Our Mission</h3>
-              <p className="mb-4 text-gray-700">At fakademy, we believe that learning should be a joyful, lifelong journey. Our platform is designed to break the mold of traditional education by making every lesson interactive, rewarding, and community-driven.</p>
+              <p className="mb-4 text-gray-700">At manamasters, we believe that learning should be a joyful, lifelong journey. Our platform is designed to break the mold of traditional education by making every lesson interactive, rewarding, and community-driven.</p>
               <ul className="list-disc pl-6 space-y-2 text-gray-600">
                 <li>Personalized learning paths for every learner</li>
                 <li>Real-world projects and challenges</li>
@@ -130,6 +131,12 @@ const Hero = () => {
         </div>
       </div>
       <AboutTeamCard />
+      
+      {/* AI Chat Widget */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <AIChat />
+      </div>
+      
       <style>{`html { scroll-behavior: smooth; }`}</style>
     </>
   );

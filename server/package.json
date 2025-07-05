@@ -1,10 +1,12 @@
 {
-  "name": "fakadmey",
+  "name": "manamasters",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "create-admin": "node src/scripts/createAdmin.js",
+    "test-translation": "node src/scripts/testTranslation.js"
   },
   "keywords": [],
   "author": "",
@@ -13,13 +15,23 @@
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cloudinary": "^2.6.1",
+    "compression": "^1.7.4",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "google-translate-api-x": "^10.7.0",
+    "helmet": "^7.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.15.1",
     "multer": "^2.0.0",
-    "nodemon": "^3.1.10"
+    "node-cron": "^3.0.3",
+    "nodemon": "^3.1.10",
+    "openai": "^4.28.0",
+    "redis": "^4.6.12",
+    "sharp": "^0.33.2",
+    "socket.io": "^4.7.4"
   }
 }
